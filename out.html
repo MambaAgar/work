@@ -1,0 +1,451 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="minimal-ui, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta property="og:title" content="MambaAgario">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A New Private Server!">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <link href="../css/glyphicons-social.css" rel="stylesheet">
+  <link href="../css/animate.css" rel="stylesheet">
+  <link href="../css/magnific-popup.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
+  <script src="../i18n8e5e.js"></script>
+  <title>MambaAgario</title>
+  </head><body><img id="favicon" rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADdklEQVRYR8VXO2wTQRB9s3fGCQkk/JS4ICYIRRAkJEJJh6ABOlKRGiQKEC20SFCABAXQUEODgCpp+FSUgESTIIQAh8IJCiQ2CU7s3A7a9e5p7+yL7cTAFv7sze28mXnzWcJ/XtSq/g+7BkbZ9w4TZFZCZNX7AjLHEDkvkO+GvueetHJmUwA+9g0cXyW6zESnmjmcmMd95jtDs9MvGsmvCeALentXMj13A9BYeBAzQATYb/Wg3h4ADaS0fGmoMPs5CUgigE87M0cqqfRTCQzUKF/LrBgYwSh4LEeTvFEXwFTfwDmQuCkJPdo6tZTVAHwQ0kQQAFJmr8KMAIwyA6sw8sz6FxkZIeX5A7PTD+LYawBoy/30y1C5OSAFwhYhsMn8T3JCmRlLLLFigTuCKSlPxD0RAaBivpzpfa/d7sS4i4RW3spakhK/WEZe0eEolUZcTkQAfMhkHwags67yHiHQSa0pt1qVF+ZloP8ysw6HIubwTO60lQkBKNevpNJvjLSO+Xosj3sp9ITDJTcUIYDJ/uw4E5201iuy7fS8VryeKKu84HKCmCeGZ3K6pjgA9hSYsNUC2C68hoRrFp0i5k8VCodXB/NftW79oSpdRYjnf8N6C3IuCKopakDYMGgAU5k91yVwxT7cTIStoj3utwCKMsBvpdwAEMCNA/mvV6MAjHQ3CXS3mHaNwrEoJRadtIwBGHwtwUftIduEp6tdO1eJJQpShh6wRDQeiAJoJwGtEXEAHvjR/nxuTAOY7M/eZ6ILNj5bSKDr34bAkNDAbUcBiodvTRKqKSfwxWP7kmo8O9pUhJpKQ9WEfmd6590y3E4eNCxE1VoQJaLKApUN7Vg/ggAVOydUJ6XaUhyphrpGEjbSCZMKkNqv24wiXnBq9kZAhKlX7cfaKJt+Ne1YbaiWXPbTr9ympPbXkxWRymeUE/CtM79waBALC3UBWBDxuUDtq/bcJajhcFIzklnljOKm1ZVj++byb11eJQ6lTOJW6AnDCfWlZqMOIj2Qeqabq+FTKVY9v95QSoyiz/JMvcl4zbG8nEo/Y2B3mJ4OkMTsiI3lSnk9yxND4B5sLib39JxoV2sXkwm/tHxxXRcTF8jHnr69cnPHNcl0WoelwVJ57jPf3vDVrJ6e6uVUjBA4y+ZyyiwLRPQeUn7pmC0+dlneEGwjgb/9/A9VGgE/ccdIhQAAAABJRU5ErkJggg==">
+  <script type="text/javascript">
+  window.isChrome = /chrome/.test(navigator.userAgent.toLowerCase())
+  window.ASSETS_ROOT = ""
+  window.EnvConfig = {}
+  MC = {
+    onSocketOpen() {},
+    onSocketClosed() {},
+    forwardProtoMessage() {},
+    updateConfigurationID() {},
+  }
+  window.googletag = {
+    cmd: []
+  }
+  window.adSlots = {}
+  window.refreshAd = window.destroyAd = () => {}
+  </script>
+  <link href="../css/link1.link" rel="stylesheet" type="text/css">
+  <script src="../jquery-2.2.3.min.js"></script>
+  <script>
+  i18n = {
+    "back_button": "Back",
+    "connect_help": "If you cannot connect to the servers, check if you have some anti virus or firewall blocking the connection.",
+    "connecting": "Connecting",
+    "continue": "Continue",
+    "games_played": "Games played",
+    "highest_mass": "Highest mass",
+    "instructions_mouse": "Move your mouse to control your cell",
+    "instructions_space": "Press <b>Space</b> to split",
+    "instructions_w": "Press <b>W</b> to eject some mass",
+    "last_match_results": "Last match results",
+    "leaderboard": "Leaderboard",
+    "leaderboard_time": "Leaderboard Time",
+    "longest_survival": "Longest survival",
+    "mass_eaten": "Mass Eaten",
+    "option_dark_theme": "Dark theme",
+    "option_set_zoom": "Zoom",
+    "option_set_borders": "Borders",
+	"option_set_no_lag": "Less Lag",
+    "option_no_colors": "No colors",
+    "option_no_names": "No names",
+    "option_no_skins": "No skins",
+    "option_show_mass": "Show mass",
+    "option_skip_stats": "Skip stats",
+    "page_graphics_auto": "Graphics:Auto",
+    "page_graphics_high": "Graphics:High",
+    "page_graphics_low": "Graphics:Low",
+    "page_graphics_medium": "Graphics:Medium",
+    "page_graphics_title": "--Graphics Quality--",
+    "play": "Play",
+    "player_cells_eaten": "Player Cells Eaten",
+    "position_1": "First",
+    "position_10": "Tenth",
+    "position_2": "Second",
+    "position_3": "Third",
+    "position_4": "Fourth",
+    "position_5": "Fifth",
+    "position_6": "Sixth",
+    "position_7": "Seventh",
+    "position_8": "Eighth",
+    "position_9": "Ninth",
+    "score": "Score",
+    "share": "Share",
+    "spectate": "Spectate",
+    "stats": "Stats",
+    "stats_cells_eaten": "cells eaten",
+    "stats_food_eaten": "food eaten",
+    "stats_highest_mass": "highest mass",
+    "stats_leaderboard_time": "leaderboard time",
+    "stats_time_alive": "time alive",
+    "stats_top_position": "top position",
+    "survival_time": "Survival Time",
+    "terms_of_service": "Terms of Service",
+    "top_position": "Top Position",
+    "total_cells_eaten": "Total cells eaten",
+    "total_mass_eaten": "Total mass eaten",
+    "unnamed_cell": "An unnamed cell",
+  };
+  </script>
+  <script src="../main_out.js"></script>
+  <script src="../mgar.js"></script>
+
+
+
+  <div id="debug-overlay"></div>
+  <div id="overlays" style="position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 200;">
+    <div id="helloContainer" data-logged-in="0" data-has-account-data="0" data-party-state="0" data-results-state="0" data-gamemode="" style="transform: translate(-50%, -50%); height: 360px;">
+      <div class="side-container">
+        <div class="agario-panel agario-side-panel agario-profile-panel">
+          <div class="clearfix" style="margin-bottom: 16px;">
+            <img class="agario-profile-picture">
+            <div class="agario-profile-name-container">
+              <div class="agario-wallet-container">
+                <span class="agario-wallet-label">-</span>
+                <img src="../mc/img/currency_icon.png" class="agario-wallet-currency">
+                <div class="agario-wallet-plus">
+                  <span>+</span>
+                </div>
+              </div>
+              <div class="agario-profile-name"></div>
+            </div>
+          </div>
+          <div style="position: relative; margin-bottom: -15px;" class="clearfix">
+            <div class="agario-exp-bar progress">
+              <span class="progress-bar-text"></span>
+              <div class="progress-bar progress-bar-striped" style="width: 0%;"></div>
+            </div>
+            <div class="progress-bar-border"></div>
+            <div class="progress-bar-star"></div>
+          </div>
+        </div>
+      </div>
+      <div id="mainPanel" class="agario-panel">
+        <form role="form">
+          <div class="form-group clearfix">
+            <div style="float: left; margin-left: 20px;">
+              <h2>MambaAgario</h2></div>
+            <div style="float: right; margin-top: 10px; height: 40px;">
+              <div>
+                <script src="../apis.google.com/js/platform.js" async=""></script>
+                <div class="g-ytsubscribe " data-channelid="UCC6hurPo_LxL7C0YFYgYnIw" data-layout="default" data-count="default"></div>
+              </div>
+              <div class="clearfix">
+                <div class="fb-like pull-right" data-href="https://www.facebook.com/playagar.io" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group clearfix">
+            <input id="nick" class="form-control" placeholder="Nick" maxlength="15" autofocus="">
+            <select id="gamemode" class="form-control" onchange="window.mgar.setGameMode($(this).val());" required="">
+              <option value=":arparty1" data-itr="agar.red: Party #1">agar.red: Party #1</option>
+              <option value=":arparty2" data-itr="agar.red: Party #2">agar.red: Party #2</option>
+			  <option value=":arparty3" data-itr="agar.red: Party #3">agar.red: Party #3</option>
+			  <option value=":arparty4" data-itr="agar.red: Party #4">agar.red: Party #4</option>
+			  <option value=":arexper" data-itr="agar.red: Experimental #1">agar.red: Experimental #1</option>
+			  <option value=":arcrazy1" data-itr="agar.red: Crazy #1">agar.red: Crazy #1</option>
+			  <option value=":arcrazy2" data-itr="agar.red: Crazy #2">agar.red: Crazy #2</option>
+			  <option value=":arbig1" data-itr="agar.red: Big #1">agar.red: Big #1</option>
+			  <option value=":arbig2" data-itr="agar.red: Big #2">agar.red: Big #2</option>
+			  <option value=":arcrazybig1" data-itr="agar.red: Crazybig #1">agar.red: Crazybig #1</option>
+			  <option value=":arcrazybig2" data-itr="agar.red: Crazybig #2">agar.red: Crazybig #2</option>
+			  <option value=":arcrazybig3" data-itr="agar.red: Crazybig #3">agar.red: Crazybig #3</option>
+			  <option value=":armother1" data-itr="agar.red: Mother #1">agar.red: Mother #1</option>
+			  <option value=":armother2" data-itr="agar.red: Mother #2">agar.red: Mother #2</option>
+			  <option value=":armother3" data-itr="agar.red: Mother #3">agar.red: Mother #3</option>
+			  <option value=":arlaby1" data-itr="agar.red: Laby #1">agar.red: Laby #1</option>
+			  <option value=":arlaby2" data-itr="agar.red: Laby #2">agar.red: Laby #2</option>
+			  <option value=":arsplits1" data-itr="agar.red: Splits #1">agar.red: Splits #1</option>
+			  <option value=":arsplits2" data-itr="agar.red: Splits #2">agar.red: Splits #2</option>
+			  <option value=":arsplits3" data-itr="agar.red: Splits #3">agar.red: Splits #3</option>
+			  <option value=":arcrazysplit1" data-itr="agar.red: Crazysplit #1">agar.red: Crazysplit #1</option>
+			  <option value=":arcrazysplit2" data-itr="agar.red: Crazysplit #2">agar.red: Crazysplit #2</option>
+			  <option value=":arcrazysplit3" data-itr="agar.red: Crazysplit #3">agar.red: Crazysplit #3</option>
+			  <option value=":armothership1" data-itr="agar.red: Mothership #1">agar.red: Mothership #1</option>
+			  <option value=":armothership2" data-itr="agar.red: Mothership #2">agar.red: Mothership #2</option>
+			  <option value=":armothership3" data-itr="agar.red: Mothership #3">agar.red: Mothership #3</option>
+			  <option value=":arteams1" data-itr="agar.red: Teams #1">agar.red: Teams #1</option>
+			  <option value=":rbmegasplit3" data-itr="3rb.io: Megasplit #3">3rb.io: Megasplit #3</option>
+			  <option value=":astreu" data-itr="astr.io: Europe">astr.io: Europe</option>
+			  <option value=":ixexpermega" data-itr="agarix.esy.es: Experimental Mega">agarix.esy.es: Experimental Mega</option>
+			  <option value=":acparty1" data-itr="agario.city: Party 1">agario.city: Party 1</option>
+			  <option value=":acexper" data-itr="agario.city: Experimental">agario.city: Experimental</option>
+			  <option value=":aceasy1" data-itr="agario.city: Easy 1">agario.city: Easy 1</option>
+			  <option value=":aceasy2" data-itr="agario.city: Easy 2">agario.city: Easy 2</option>
+			  <option value=":achighbig1" data-itr="agario.city: HighBig 1">agario.city: HighBig 1</option>
+			  <option value=":achighbig2" data-itr="agario.city: HighBig 2">agario.city: HighBig 2</option>
+			  <option value=":acbig1" data-itr="agario.city: Big 1">agario.city: Big 1</option>
+			  <option value=":acbig2" data-itr="agario.city: Big 2">agario.city: Big 2</option>
+			  <option value=":accrazyteams" data-itr="agario.city: Crazyteams">agario.city: Crazyteams</option>
+			  <option value=":accrazy2" data-itr="agario.city: Crazy 2">agario.city: Crazy 2</option>
+			  <option value=":accrazy3" data-itr="agario.city: Crazy 3">agario.city: Crazy 3</option>
+			  <option value=":acmother" data-itr="agario.city: Mother">agario.city: Mother</option>
+			  <option value=":acspeed" data-itr="agario.city: Speed">agario.city: Speed</option>
+			  <option value=":acrt" data-itr="agario.city: Realtime split">agario.city: Realtime split</option>
+			  <option value=":tdbots1" data-itr="trydox.com: Bots #1">trydox.com: Bots #1</option>
+			  <option value=":tdbots2" data-itr="trydox.com: Bots #2">trydox.com: Bots #2</option>
+			  <option value=":tdinst" data-itr="trydox.com: Instant Merge #1">trydox.com: Instant Merge #1</option>
+			  <option value=":tdinstt" data-itr="trydox.com: Instant Team #1">trydox.com: Instant Team #1</option>
+			  <option value=":tdgiant" data-itr="trydox.com: Giant #1">trydox.com: Giant #1</option>
+			  <!-- <option value=":" data-itr=""></option> -->
+            </select>
+          </div>
+          <div class="form-group" id="agario-main-buttons">
+            <button type="button" onclick="$('#settings, #instructions').toggle();return false;" class="btn btn-info btn-settings"><i class="glyphicon glyphicon-cog"></i></button>
+            <button type="submit" onclick="setNick(document.getElementById('nick').value); return false;" class="btn btn-play btn-primary btn-needs-server" data-itr="play" style="margin-left:5px;width:275px">Play</button>
+            <br clear="both">
+          </div>
+          <div id="settings" class="checkbox" style="display:none;">
+            <div style="float: left; width: 200px;">
+              <div id="locationKnown"></div>
+              <div id="options" style="margin: 6px; font-size: 12px;">
+                <label>
+                  <input type="checkbox" onchange="setSkins(!$(this).is(':checked'));"><span data-itr="option_no_skins">No skins</span></label>
+                <label>
+                  <input type="checkbox" onchange="setNames(!$(this).is(':checked'));"><span data-itr="option_no_names">No names</span></label>
+                <label>
+                  <input type="checkbox" onchange="setColors($(this).is(':checked'));"><span data-itr="option_no_colors">No colors</span></label>
+                <label>
+                  <input type="checkbox" onchange="setShowMass($(this).is(':checked'));"><span data-itr="option_show_mass">Show mass</span></label>
+                <label>
+                  <input type="checkbox" onchange="setDarkTheme($(this).is(':checked'));"><span data-itr="option_dark_theme">Dark theme</span></label>
+                <label>
+                  <input type="checkbox" onchange="setSkipStats($(this).is(':checked'));"><span data-itr="option_skip_stats">Skip stats</span></label>
+                <label>
+                  <input type="checkbox" id="zoom" onchange="setZoom($(this).is(':checked'));"><span data-itr="option_set_zoom">Zoom</span></label>
+                <label>
+                  <input type="checkbox" id="borders" onchange="setBorders($(this).is(':checked'));"><span data-itr="option_set_borders">Borders</span></label>
+				                  <label>
+                  <input type="checkbox" id="simpleDraw" onchange="setSimpleDraw($(this).is(':checked'));"><span data-itr="option_set_no_lag">Less Lag</span></label>
+              </div>
+            </div>
+            <div style="float: right; width: 120px;">
+              <button onclick="spectate(); return false;" class="btn btn-warning btn-spectate btn-needs-server" data-itr="spectate">Spectate</button>
+              <a href="https://www.youtube.com/channel/UCOik4WesXKFJ4FEjmzXm6og" target="_blank" style=""><input class="btn footer-btn twitter" type="button" style="width: 100%;color: #fff;background: #FF0000;opacity: 1;float: left;" value="MambaAgario YT"></a>
+            </div>
+            <br clear="both">
+            <span id="version-tag">
+          </span></div>
+        </form>
+        <div id="instructions">
+          <hr>
+          <center><span class="text-muted">
+          <span data-itr="instructions_mouse">Move your mouse to control your cell</span>
+            <br>
+            <span data-itr="instructions_space">Press <b>Space</b> to split</span>
+            <br>
+            <span data-itr="instructions_w">Press <b>W</b> to eject some mass</span>
+            <br>
+			<span data-itr="Press <b>E</b> to split bots">Press <b>E</b> to split bots</span>
+			<br>
+			<span data-itr="Press <b>R</b> to eject some mass from bots">Press <b>R</b> to eject some mass from bots</span>
+			<br>
+			<span data-itr="<b>MambaAgario</b>"><b>MambaAgario</b></span>
+            </span>
+          </center>
+        </div>
+        <hr>
+      </div>
+      <div id="stats" style="display: none;" class="agario-panel">
+        <h2><center>Match Results</center></h2>
+        <canvas id="statsGraph" width="350" height="230"></canvas>
+        <div id="statsPelletsContainer">
+          <span id="statsText" class="stats-food-eaten"></span>
+          <span id="statsSubtext" data-itr="stats_food_eaten">food eaten</span>
+        </div>
+        <div id="statsHighestMassContainer">
+          <span id="statsText" class="stats-highest-mass"></span>
+          <span id="statsSubtext" data-itr="stats_highest_mass">highest mass</span>
+        </div>
+        <div id="statsTimeAliveContainer">
+          <span id="statsText" class="stats-time-alive"></span>
+          <span id="statsSubtext" data-itr="stats_time_alive">time alive</span>
+        </div>
+        <div id="statsTimeLeaderboardContainer">
+          <span id="statsText" class="stats-leaderboard-time"></span>
+          <span id="statsSubtext" data-itr="stats_leaderboard_time">leaderboard time</span>
+        </div>
+        <div id="statsPlayerCellsEatenContainer">
+          <span id="statsText" class="stats-cells-eaten"></span>
+          <span id="statsSubtext" data-itr="stats_cells_eaten">cells eaten</span>
+        </div>
+        <div id="statsTopPositionContainer">
+          <span id="statsText" class="stats-top-position">?</span>
+          <span id="statsSubtext" data-itr="stats_top_position">top position</span>
+        </div>
+        <hr style="position:absolute;bottom:350px;width:100%;margin:0px;">
+        <button id="statsContinue" class="btn btn-primary" data-itr="continue" onclick="closeStats();">Continue</button>
+        <hr style="position:absolute;bottom:255px;width:100%;">
+        <div id="s300x250"></div>
+      </div>
+      <div class="side-container">
+        <div class="agario-party">
+          <div class="agario-panel agario-side-panel agario-party-0">
+            <h4><center data-itr="party">party</center></h4>
+            <div style="margin-bottom: 12px;" data-itr="party_description">party_description</div>
+            <div class="clearfix" style="margin: 0px -10px 0px -10px;">
+              <button class="btn btn-primary" style="width: 102.5px; float: left;" onclick="$('#helloContainer').attr('data-party-state', '3');createParty();" data-itr="create_party">create_party</button>
+              <button class="btn btn-primary" style="width: 102.5px; float: right;" onclick="$('#joinPartyToken').val('');$('#helloContainer').attr('data-party-state', '2');" data-itr="join_party">join_party</button>
+            </div>
+          </div>
+          <div class="agario-panel agario-side-panel agario-party-1">
+            <h4><center data-itr="party">party</center></h4>
+            <div style="margin-bottom: 12px;" data-itr="create_party_instructions">create_party_instructions</div>
+            <div class="clearfix">
+              <input type="text" value="??????" readonly="" class="partyToken form-control" style="cursor: text; width: 130px; float: left; border-radius: 4px 0px 0px 4px;">
+              <button class="btn btn-primary copy-party-token" style="float: right; width: 60px; border-radius: 0px 4px 4px 0px;">Copy</button>
+            </div>
+          </div>
+          <div class="agario-panel agario-side-panel agario-party-2">
+            <h4><center data-itr="party">party</center></h4>
+            <div style="margin-bottom: 12px;" data-itr="join_party_instructions">join_party_instructions</div>
+            <input id="joinPartyToken" type="text" value="" class="form-control">
+            <div class="clearfix" style="margin: 10px -10px 0px -10px;">
+              <button class="btn btn-primary" style="width: 210px; float: right;" onclick="joinParty($('#joinPartyToken').val());" data-itr="join_party">join_party</button>
+            </div>
+          </div>
+          <div class="agario-panel agario-side-panel agario-party-3" style="padding: 0px; overflow: hidden; position: relative;">
+            <canvas width="220" height="100" class="cell-spinner" data-size="26"></canvas>
+            <div class="creating-party-text" data-itr="creating_party">creating_party</div>
+          </div>
+          <div class="agario-panel agario-side-panel agario-party-4" style="padding: 0px; overflow: hidden; position: relative;">
+            <canvas width="220" height="100" class="cell-spinner" data-size="26"></canvas>
+            <div class="creating-party-text" data-itr="joining_party">joining_party</div>
+          </div>
+          <div class="agario-panel agario-side-panel agario-party-5">
+            <h4><center data-itr="party">party</center></h4>
+            <div style="margin-bottom: 12px;" data-itr="joined_party_instructions">joined_party_instructions</div>
+            <div class="clearfix">
+              <input type="text" value="??????" readonly="" class="partyToken form-control" style="cursor: text; width: 125px; float: left;">
+              <button class="btn btn-primary copy-party-token" style="float: right; width: 60px;">Copy</button>
+            </div>
+          </div>
+          <div class="agario-panel agario-side-panel agario-party-6">
+            <h4><center data-itr="party">party</center></h4>
+            <div style="margin-bottom: 12px;" data-itr="party_join_error">party_join_error</div>
+            <div class="clearfix" style="margin: 10px -10px 0px -10px;">
+              <button class="btn btn-primary btn-block" onclick="$('#helloContainer').attr('data-party-state', '0');" data-itr="back_button">Back</button>
+            </div>
+          </div>
+          <div style="position: absolute; right: 10px; top: 4px;">
+            <button type="button" class="close" onclick="cancelParty();">×</button>
+          </div>
+        </div>
+    </div>
+    <div class="v72-panel" id="stats" style="display: none">
+      <h2>
+                  <center>Match Results</center>
+               </h2>
+      <canvas id="statsGraph" width="350" height="230"></canvas>
+      <div id="statsPelletsContainer"><span class="stats-food-eaten" id="statsText"></span><span id="statsSubtext" data-itr="stats_food_eaten">food eaten</span></div>
+      <div id="statsHighestMassContainer"><span class="stats-highest-mass" id="statsText"></span><span id="statsSubtext" data-itr="stats_highest_mass">highest mass</span></div>
+      <div id="statsTimeAliveContainer"><span class="stats-time-alive" id="statsText"></span><span id="statsSubtext" data-itr="stats_time_alive">time alive</span></div>
+      <div id="statsTimeLeaderboardContainer"><span class="stats-leaderboard-time" id="statsText"></span><span id="statsSubtext" data-itr="stats_leaderboard_time">leaderboard time</span></div>
+      <div id="statsPlayerCellsEatenContainer"><span class="stats-cells-eaten" id="statsText"></span><span id="statsSubtext" data-itr="stats_cells_eaten">cells eaten</span></div>
+      <div id="statsTopPositionContainer"><span class="stats-top-position" id="statsText">?</span><span id="statsSubtext" data-itr="stats_top_position">top position</span></div>
+      <hr style="position:absolute;bottom:370px;width:100%;margin:0px">
+      <button class="btn btn-primary" id="statsContinue" data-itr="continue" onclick="closeStats();">Continue</button>
+      <hr style="position:absolute;bottom:255px;width:100%">
+    </div>
+  </div>
+  </div>
+  <div id="connecting" style="display: none; position: absolute; left: 0; right: 0; top: 0; bottom: 0; z-index: 100">
+    <div class="connecting-panel" style="width: 350px; background-color: #FFFFFF; margin: auto auto auto -175px; border-radius: 15px; padding: 5px 15px 5px 15px">
+      <h2 data-itr="connecting">Connecting</h2>
+      <p data-itr="connect_help">If you cannot connect to the servers, check if you have some anti virus or firewall blocking the connection.</p>
+    </div>
+  </div>
+  <style>
+  #chat_textbox {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    background: rgba(0, 0, 0, .2);
+    border: 0px;
+    outline: none;
+    color: #FFF;
+    height: 30px;
+    text-indent: 12px;
+    left: 10px;
+    width: 300px;
+  }
+  
+  #chat_textbox:focus {
+    background: rgba(0, 0, 0, .5);
+  }
+  
+  #chat {
+    display: inline-block;
+    margin-left: 10px;
+    font-weight: 800;
+    font-family: 'Roboto';
+    font-size: 17.5px;
+    line-height: 15px;
+    text-indent: 12px;
+    /*opacity: 0.7;*/
+    position: absolute;
+    z-index: 1000;
+    bottom: 40px;
+    width: 500px;
+  }
+  
+  .chat_message {
+    font-size: 120%;
+    line-height: 7px;
+  }
+  .subButton {
+    background-image: url(../yt/brand/media/image/YouTube-icon-full_color.png); /* 16px x 16px */
+    background-color: transparent; /* make the button transparent */
+    background-repeat: no-repeat;  /* make the background image appear only once */
+    background-position: 0px 0px;  /* equivalent to 'top left' */
+    border: none;           /* assuming we don't want any borders */
+    cursor: pointer;        /* make the cursor like hovering over an <a> element */
+    height: 16px;           /* make this the size of your image */
+    padding-left: 16px;     /* make text start to the right of the image */
+    vertical-align: middle; /* align the text vertically centered */
+}
+
+
+  </style>
+  <canvas id="canvas" width="808" height="662"></canvas>
+  <input type="text" id="chat_textbox" maxlength="100" placeholder="Press enter to chat">
+  <div id="chat"></div>
+  <div style="font-family:'Ubuntu'"> </div>
+  <script>
+  $(function() {
+    v72Init()
+    window.mgar.init();
+    $('[data-itr]').each(function() {
+      var $this = $(this)
+      var itr = $this.attr('data-itr')
+      $this.html(i18n[itr] || itr)
+    })
+  })
+  var mainCanvas = document.getElementById("canvas");
+  mainCanvas.onfocus = function() {
+    isTyping = false;
+  };
+  document.getElementById("chat_textbox").onblur = function() {
+    window.isTyping = false;
+  };
+
+
+  document.getElementById("chat_textbox").onfocus = function() {
+    window.isTyping = true;
+  };
+  </script>
+
+
+?php&gt;
+<canvas id="minimap" style="background: rgba(0, 0, 0, 0.2); border-radius: 5px; border: 1px solid rgba(255, 255, 255, 0.2); padding: 0px; margin: 0px; width: 200px; height: 200px; position: absolute; right: 15px; bottom: 15px;"></canvas><canvas id="nodes" width="200" height="200" style="border-radius: 5px; padding: 0px; margin: 0px; width: 200px; height: 200px; position: absolute; right: 15px; bottom: 15px;"></canvas></body></html>
